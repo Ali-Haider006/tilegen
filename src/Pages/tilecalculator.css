@@ -1,0 +1,119 @@
+/* Container styling */
+.container {
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header section */
+.header {
+  position: relative;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for h2 headers */
+.container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* General table layout */
+.container table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Label and input text alignment */
+.container table td {
+  padding: 10px;
+  vertical-align: middle;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Input field styling */
+.container input[type="text"],
+.container input[type="number"],
+.container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Button table layout */
+#button_table {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+#button_table input[type="button"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#button_table input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Section separator */
+hr {
+  border: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* Input fields in readonly mode */
+.container input[readonly] {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  #button_table input[type="button"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

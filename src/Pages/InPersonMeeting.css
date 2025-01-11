@@ -1,0 +1,117 @@
+/* General styling for the In-Person Meeting page */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Styling for the map container */
+.map-container {
+  height: 400px; /* Set the height of the map */
+  width: 100%; /* Full width of the parent container */
+  margin: 20px 0; /* Add some space above and below the map */
+  border-radius: 8px; /* Rounded corners for the map container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Styling for the selected location information section */
+.selected-location-info {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Max width for the info box */
+  margin: 20px auto; /* Center align the info box */
+}
+
+.selected-location-info h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.selected-location-info p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Styling for the Date and Time picker */
+.meeting-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.date-picker,
+.time-picker {
+  margin: 10px 0;
+}
+
+.date-time-picker {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.date-picker label,
+.time-picker label {
+  font-size: 1.1rem;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling for the Done button */
+.done-button {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease;
+}
+
+.done-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.done-button:disabled {
+  background-color: #ccc; /* Grey for disabled state */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 600px) {
+  .map-container {
+    height: 300px; /* Smaller height for smaller screens */
+  }
+
+  .selected-location-info {
+    max-width: 100%; /* Full width for small screens */
+    padding: 10px;
+  }
+
+  .date-time-picker {
+    max-width: 100%; /* Full width for date and time pickers */
+  }
+}

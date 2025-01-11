@@ -1,0 +1,207 @@
+/* Root Variables for Consistency */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --button-color: #007bff;
+  --button-hover-color: #0056b3;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Main Container Styles */
+.container {
+  margin-top: 20px; /* Avoid overlap with navbar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+/* Layout of Sections (Map, Calendar, Reviews) */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensures the sections wrap on small screens */
+}
+
+/* Headings */
+h1, h2 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* Map Section */
+.map-container {
+  width: 48%; /* Map takes 48% of the container width */
+  height: 300px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-2px);
+}
+
+/* Calendar Section */
+.calendar {
+  width: 48%; /* Calendar takes 48% of the container width */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.calendar:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-2px);
+}
+
+/* Reviews Section */
+.reviews {
+  width: 100%; /* Reviews take full width */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  text-align: left;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Reviews List Styling */
+.reviews ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Adds padding for bullet points */
+}
+
+.reviews li {
+  margin-bottom: 5px;
+}
+
+/* Button Styles (if needed) */
+button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+  /* Stack the map and calendar vertically on small screens */
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container,
+  .calendar {
+    width: 100%; /* Full width for both map and calendar */
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  /* Adjust font size for better readability on small screens */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Accessibility (Focus States) */
+button:focus,
+.map-container:focus,
+.calendar:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* General Body Styling */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: #f4f4f4;
+}
+
+/* Container for Image (if needed) */
+/* .image-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+} */
+
+/* Scroll Management */
+.container {
+  overflow: auto;
+}
+/* Main Container Styles */
+.container {
+  margin-top: 20px; /* Avoid overlap with navbar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  position: relative; /* Ensures stacking context is respected */
+}
+
+/* Map Section */
+.map-container {
+  width: 48%; /* Map takes 48% of the container width */
+  height: 300px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  z-index: 1; /* Ensure it's stacked above any other content */
+}
+
+.map-container:hover {
+  box-shadow: var(--hover-shadow);
+  transform: translateY(-2px);
+}
+
+/* Layout of Sections (Map, Calendar, Reviews) */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensures the sections wrap on small screens */
+}
+
+/* Navbar adjustment to prevent overlap (if needed) */
+.navbar {
+  position: relative;
+  z-index: 2; /* Ensures navbar stays on top */
+}

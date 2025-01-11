@@ -1,0 +1,75 @@
+/* General styles for the Phone Call Meeting page */
+.phone-call-meeting {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phone-call-meeting h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.phone-call-meeting p {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="tel"],
+.form-group input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+  .phone-call-meeting {
+    padding: 15px;
+  }
+
+  .phone-call-meeting h1 {
+    font-size: 1.5rem;
+  }
+}

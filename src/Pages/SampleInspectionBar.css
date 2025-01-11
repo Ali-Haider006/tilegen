@@ -1,0 +1,61 @@
+.sample-order-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.tile-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tile {
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  border: 3px solid #0073e6;
+}
+
+.tile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:focus {
+  outline: none;
+}
+
+button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

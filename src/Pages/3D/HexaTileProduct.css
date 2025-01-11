@@ -1,0 +1,43 @@
+.product-container {
+  display: flex; /* Make the container a flexbox */
+}
+
+.productdisplay-left {
+  flex: 1; /* Occupy the full width available */
+  height: 100vh;
+  width: 50%;
+  
+}
+.iframe {
+  width: 800px;
+}
+.productdisplay-3dviewer {
+  width: 100%;
+  height: 500px;
+}
+
+.productdisplay-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  align-items: center;
+}
+
+.productdisplay-right-price-old {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.size-option {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.size-option.selected {
+  background-color: #ccc;
+}

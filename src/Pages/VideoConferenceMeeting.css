@@ -1,0 +1,97 @@
+/* General styles for the Video Conference Meeting page */
+.video-conference-meeting {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-conference-meeting h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.video-conference-meeting p {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input[type="url"],
+.form-group .react-datepicker-wrapper {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Meeting summary styling */
+.meeting-summary {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.meeting-summary h3 {
+  color: #333;
+}
+
+.meeting-summary pre {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+  .video-conference-meeting {
+    padding: 15px;
+  }
+
+  .video-conference-meeting h1 {
+    font-size: 1.5rem;
+  }
+}
